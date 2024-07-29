@@ -1,2 +1,2 @@
 # x455-kaiser-project
- x455 website project 
+UC Berkeley Professional Program in Graphic Design - HTML5 & CSS3
