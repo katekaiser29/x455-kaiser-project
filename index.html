@@ -4,7 +4,7 @@
     <title>W3.CSS Template</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="./css/w3.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Lato"
@@ -42,19 +42,19 @@
 
       /* First image (Logo. Full height) */
       .bgimg-1 {
-        background-image: url("/w3images/parallax1.jpg");
+        background-image: url("./video/ocean.gif");
         min-height: 100%;
       }
 
       /* Second image (Portfolio) */
       .bgimg-2 {
-        background-image: url("/w3images/parallax2.jpg");
+        background-image: url("./image/background2.jpg");
         min-height: 400px;
       }
 
       /* Third image (Contact) */
       .bgimg-3 {
-        background-image: url("/w3images/parallax3.jpg");
+        background-image: url("./image/background3.jpg");
         min-height: 400px;
       }
 
@@ -90,20 +90,31 @@
         </a>
         <a href="#home" class="w3-bar-item w3-button">HOME</a>
         <a href="#about" class="w3-bar-item w3-button w3-hide-small"
-          ><i class="fa fa-user"></i> ABOUT</a
+          ></i> ABOUT</a
         >
         <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"
-          ><i class="fa fa-th"></i> PORTFOLIO</a
+          ></i> PORTFOLIO</a
         >
-        <a href="#contact" class="w3-bar-item w3-button w3-hide-small"
-          ><i class="fa fa-envelope"></i> CONTACT</a
+        <a href="#services" class="w3-bar-item w3-button w3-hide-small"
+        ></i>SERVICES</a
+        >
+        <a href="#meet us" class="w3-bar-item w3-button w3-hide-small"
+        ></i> MEET US</a
+        >
+        <a href="#inquire" class="w3-bar-item w3-button w3-hide-small"
+          ></i> INQUIRE</a
         >
         <a
-          href="#"
-          class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"
+          href="#search"
+          class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-brown"
         >
           <i class="fa fa-search"></i>
         </a>
+        <a
+        href="#shop"
+        class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-brown"
+      >
+        <i class="fa fa-shopping-basket"></i>
       </div>
 
       <!-- Navbar on small screens -->
@@ -124,11 +135,23 @@
           >PORTFOLIO</a
         >
         <a
-          href="#contact"
+          href="#inquire"
           class="w3-bar-item w3-button"
           onclick="toggleFunction()"
-          >CONTACT</a
+          >INQUIRE</a
         >
+        <a
+          href="#meet us"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >MEET US</a
+        >
+        <a
+        href="#services"
+        class="w3-bar-item w3-button"
+        onclick="toggleFunction()"
+        >SERVICES</a
+      >
         <a href="#" class="w3-bar-item w3-button">SEARCH</a>
       </div>
     </div>
@@ -137,109 +160,49 @@
     <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
       <div class="w3-display-middle" style="white-space: nowrap">
         <span
-          class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"
-          >MY <span class="w3-hide-small">WEBSITE</span> LOGO</span
+          class="w3-center w3-padding-large w3-brown w3-xlarge w3-wide w3-animate-opacity"
+          >k l d <span class="w3-hide-small">studio</span
         >
       </div>
     </div>
 
     <!-- Container (About Section) -->
     <div class="w3-content w3-container w3-padding-64" id="about">
-      <h3 class="w3-center">ABOUT US</h3>
-      <p class="w3-center"><em>Kate & the KLD Design Team</em></p>
-      <p>
-        We have created a fictional "personal" website/blog, and our fictional
-        character is a hobby photographer. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      <h3 class="w3-center">ABOUT</h3>
+      <p class="w3-center"><em>The KLD Design Team</em></p>
+        <img style="width: 400px; float: right; padding-left: 20px;" src="./image/about_img2.png">
+        Discover unparalleled creativity and precision with our bespoke design service at kld studio. 
+        Whether you're envisioning a sleek corporate identity, a captivating digital interface, 
+        or a luxurious residential space, our expert designers blend innovation with functionality to 
+        craft solutions that exceed expectations. With a meticulous attention to detail and a deep 
+        understanding of your unique needs, we transform concepts into reality, ensuring each project 
+        reflects your distinct style and vision. Elevate your brand, elevate your space – trust kld 
+        studio to illuminate the possibilities.
+
       </p>
       <div class="w3-row">
         <div class="w3-col m6 w3-center w3-padding-large">
-          <p>
-            <b><i class="fa fa-user w3-margin-right"></i>My Name</b>
-          </p>
           <br />
           <img
-            src="/w3images/avatar_hat.jpg"
-            class="w3-round w3-image w3-opacity w3-hover-opacity-off"
-            alt="Photo of Me"
-            width="500"
-            height="333"
+            src="./image/about_img1.png"
           />
         </div>
 
         <!-- Hide this text on small devices -->
         <div class="w3-col m6 w3-hide-small w3-padding-large">
           <p>
-            Welcome to my website. I am lorem ipsum consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
+            In addition to our core design offerings, kld studio provides a range of complementary services to 
+            enrich your projects further. We offer comprehensive branding strategies to ensure your identity 
+            resonates consistently across all platforms. Our digital expertise extends to user experience (UX) design, 
+            ensuring intuitive interfaces that enhance engagement and usability. For residential clients, 
+            we provide interior design consultations that encompass everything from space planning to 
+            material selection, creating harmonious environments that blend functionality with aesthetic appeal. 
+            Whatever your design needs may be, kld studio is committed to delivering exceptional results 
+            that exceed your expectations.
           </p>
         </div>
       </div>
-      <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-      <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
-      <div class="w3-light-grey">
-        <div
-          class="w3-container w3-padding-small w3-dark-grey w3-center"
-          style="width: 90%"
-        >
-          90%
-        </div>
-      </div>
-      <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-      <div class="w3-light-grey">
-        <div
-          class="w3-container w3-padding-small w3-dark-grey w3-center"
-          style="width: 85%"
-        >
-          85%
-        </div>
-      </div>
-      <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
-      <div class="w3-light-grey">
-        <div
-          class="w3-container w3-padding-small w3-dark-grey w3-center"
-          style="width: 75%"
-        >
-          75%
-        </div>
-      </div>
-    </div>
 
-    <div class="w3-row w3-center w3-dark-grey w3-padding-16">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">14+</span><br />
-        Partners
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">55+</span><br />
-        Projects Done
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">89+</span><br />
-        Happy Clients
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br />
-        Meetings
-      </div>
-    </div>
 
     <!-- Second Parallax Image with Portfolio Text -->
     <div class="bgimg-2 w3-display-container w3-opacity-min">
@@ -250,12 +213,8 @@
 
     <!-- Container (Portfolio Section) -->
     <div class="w3-content w3-container w3-padding-64" id="portfolio">
-      <h3 class="w3-center">OUR WORK</h3>
+      <h3 class="w3-center">PORTFOLIO</h3>
       <p class="w3-center">
-        <em
-          >Here are some of my latest lorem work ipsum tipsum.<br />
-          Click on the images to make them bigger</em
-        >
       </p>
       <br />
 
@@ -370,22 +329,246 @@
       </div>
     </div>
 
-    <!-- Third Parallax Image with Portfolio Text -->
+ <!-- Third Parallax Image with Services Text -->
+ <div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">SERVICES</span>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div class="w3-content w3-container w3-padding-64" id="services">
+  <h3 class="w3-center">SERVICES</h3>
+  <p class="w3-center">
+  </p>
+  <br />
+
+  <!-- REMOVE AND REPLACE WITH YOUTUBE VIDEOS + TEXT Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img
+        src="/w3images/p1.jpg"
+        style="width: 100%"
+        onclick="onClick(this)"
+        class="w3-hover-opacity"
+        alt="The mist over the mountains"
+      />
+    </div>
+
+    <div class="w3-col m3">
+      <img
+        src="/w3images/p2.jpg"
+        style="width: 100%"
+        onclick="onClick(this)"
+        class="w3-hover-opacity"
+        alt="Coffee beans"
+      />
+    </div>
+
+    <div class="w3-col m3">
+      <img
+        src="/w3images/p3.jpg"
+        style="width: 100%"
+        onclick="onClick(this)"
+        class="w3-hover-opacity"
+        alt="Bear closeup"
+      />
+    </div>
+
+    <div class="w3-col m3">
+      <img
+        src="/w3images/p4.jpg"
+        style="width: 100%"
+        onclick="onClick(this)"
+        class="w3-hover-opacity"
+        alt="Quiet ocean"
+      />
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img
+        src="/w3images/p5.jpg"
+        style="width: 100%"
+        onclick="onClick(this)"
+        class="w3-hover-opacity"
+        alt="The mist"
+      />
+    </div>
+
+    <div class="w3-col m3">
+      <img
+        src="/w3images/p6.jpg"
+        style="width: 100%"
+        onclick="onClick(this)"
+        class="w3-hover-opacity"
+        alt="My beloved typewriter"
+      />
+    </div>
+
+    <div class="w3-col m3">
+      <img
+        src="/w3images/p7.jpg"
+        style="width: 100%"
+        onclick="onClick(this)"
+        class="w3-hover-opacity"
+        alt="Empty ghost train"
+      />
+    </div>
+
+    <div class="w3-col m3">
+      <img
+        src="/w3images/p8.jpg"
+        style="width: 100%"
+        onclick="onClick(this)"
+        class="w3-hover-opacity"
+        alt="Sailing"
+      />
+    </div>
+    <button
+      class="w3-button w3-padding-large w3-light-grey"
+      style="margin-top: 64px"
+    >
+      LOAD MORE
+    </button>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div
+  id="modal01"
+  class="w3-modal w3-black"
+  onclick="this.style.display='none'"
+>
+  <span
+    class="w3-button w3-large w3-black w3-display-topright"
+    title="Close Modal Image"
+    ><i class="fa fa-remove"></i
+  ></span>
+  <div
+    class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
+  >
+    <img id="img01" class="w3-image" />
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+ <!-- Fourth Parallax Image with Meet us Text -->
+ <div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">MEET US</span>
+  </div>
+</div>
+
+<!-- Container (Meet us Section) -->
+<div class="w3-content w3-container w3-padding-64" id="meet us">
+  <h3 class="w3-center">MEET US</h3>
+  <p class="w3-center">
+  </p>
+  <br />
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m4">
+      <img
+        src="./image/meet_us1.png"
+        style="width: 100%"
+        onclick="onClick(this)"
+        class="w3-hover-opacity"
+        alt="About Kate"
+      />
+    </div>
+
+    <div class="w3-col m4">
+      <img
+        src="./image/meet_us2.png"
+        style="width: 100%"
+        onclick="onClick(this)"
+        class="w3-hover-opacity"
+        alt="About Lena"
+      />
+    </div>
+
+    <div class="w3-col m4">
+      <img
+        src="./image/meet_us3.png"
+        style="width: 100%"
+        onclick="onClick(this)"
+        class="w3-hover-opacity"
+        alt="About Tori"
+      />
+    </div>
+
+    <div class="w3-row-padding w3-center w3-section">
+
+    <div class="w3-col m4">
+      <img
+        src="./image/meet_us4.png"
+        style="width: 100%"
+        onclick="onClick(this)"
+        class="w3-hover-opacity"
+        alt="About Casey"
+      />
+    </div>
+
+    <div class="w3-col m4">
+      <img
+        src="./image/meet_us5.png"
+        style="width: 100%"
+        onclick="onClick(this)"
+        class="w3-hover-opacity"
+        alt="About Nora"
+      />
+    </div>
+
+    <div class="w3-col m4">
+      <img
+        src="./image/meet_us6.png"
+        style="width: 100%"
+        onclick="onClick(this)"
+        class="w3-hover-opacity"
+        alt="About Lola"
+      />
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div
+  id="modal01"
+  class="w3-modal w3-black"
+  onclick="this.style.display='none'"
+>
+  <span
+    class="w3-button w3-large w3-brown w3-display-topright"
+    title="Close Modal Image"
+    ><i class="fa fa-remove"></i
+  ></span>
+  <div
+    class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
+  >
+    <img id="img01" class="w3-image" />
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+    <!-- Fifth Parallax Image with INQUIRE Text -->
     <div class="bgimg-3 w3-display-container w3-opacity-min">
       <div class="w3-display-middle">
-        <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+        <span class="w3-xxlarge w3-text-white w3-wide">INQUIRE</span>
       </div>
     </div>
 
-    <!-- Container (Contact Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="contact">
-      <h3 class="w3-center">WHERE I WORK</h3>
-      <p class="w3-center"><em>I'd love your feedback!</em></p>
+    <!-- Container (inquire Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="inquire">
+      <h3 class="w3-center">LETS GET IN TOUCH</h3>
 
       <div class="w3-row w3-padding-32 w3-section">
         <div class="w3-col m4 w3-container">
           <img
-            src="/w3images/map.jpg"
+            src="./image/inquire1.png"
             class="w3-image w3-round"
             style="width: 100%"
           />
@@ -395,19 +578,18 @@
             <i
               class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
             ></i>
-            Chicago, US<br />
+            California, USA<br />
             <i
               class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
             ></i>
-            Phone: +00 151515<br />
+            Phone: 123.456.7891<br />
             <i
               class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
             ></i>
-            Email: mail@mail.com<br />
+            Email: hello@kldstudio.com<br />
           </div>
           <p>
-            Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a
-            note:
+            leave us a note:
           </p>
           <form action="/action_page.php" target="_blank">
             <div class="w3-row-padding" style="margin: 0 -16px 8px -16px">
@@ -450,7 +632,7 @@
 
     <!-- Footer -->
     <footer
-      class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off"
+      class="w3-center w3-brown w3-padding-64 w3-opacity w3-hover-opacity-off"
     >
       <a href="#home" class="w3-button w3-light-grey"
         ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
