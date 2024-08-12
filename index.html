@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>W3.CSS Template</title>
+    <title>kld studio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./css/w3.css" />
@@ -9,9 +9,18 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Lato"
     />
+    <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+    <script
+      type="text/JavaScript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/JavaScript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js">
+    </script>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     />
     <style>
       body,
@@ -343,7 +352,7 @@
             the unique tastes and lifestyles of their clients.
           </p>
           <p> Moreover, KLD Studio's portfolio highlights a profound understanding of spatial dynamics and human-centered
-            design principles. The firm’s approach to interior design goes beyond superficial decoration; it involves
+            design principles. The firm's approach to interior design goes beyond superficial decoration; it involves
             a thoughtful exploration of how spaces can enhance everyday living and working experiences. Each project
             is approached with a strategic mindset, considering factors such as natural light, flow of movement, and
             ergonomic comfort to create environments that are both practical and inspiring. The studio's innovative
@@ -366,121 +375,54 @@
 
 <!-- Container (Workshops Section) -->
 <div class="w3-content w3-container w3-padding-64" id="workshops">
-  <h3 class="w3-center">WORKSHOPS</h3>
+  <h3 class="w3-center">COME SEE US IN PERSON</h3>
   <p class="w3-center">
   </p>
   <br />
 
-  <!-- REMOVE AND REPLACE WITH YOUTUBE VIDEOS + TEXT Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img
-        src="/w3images/p1.jpg"
-        style="width: 100%"
-        onclick="onClick(this)"
-        class="w3-hover-opacity"
-        alt="The mist over the mountains"
-      />
-    </div>
-
-    <div class="w3-col m3">
-      <img
-        src="/w3images/p2.jpg"
-        style="width: 100%"
-        onclick="onClick(this)"
-        class="w3-hover-opacity"
-        alt="Coffee beans"
-      />
-    </div>
-
-    <div class="w3-col m3">
-      <img
-        src="/w3images/p3.jpg"
-        style="width: 100%"
-        onclick="onClick(this)"
-        class="w3-hover-opacity"
-        alt="Bear closeup"
-      />
-    </div>
-
-    <div class="w3-col m3">
-      <img
-        src="/w3images/p4.jpg"
-        style="width: 100%"
-        onclick="onClick(this)"
-        class="w3-hover-opacity"
-        alt="Quiet ocean"
-      />
-    </div>
+  <!-- sortable table with 4 columns -->
+  <div class="w3-padding-large">
+      <table id="myTable" class="w3-table-all">
+        <thread>
+        <tr class="w-3 w3-dark-grey">
+            <th>WORKSHOP</th>
+            <th>DATE</th>
+            <th>TIME</th>
+            <th>ENROLLING</th>
+          </tr>
+        </thread>  
+          <tr class="w3-hover-opacity">
+            <td>Color theory 101</td>
+            <td>September 1, 2024</td>
+            <td>4pm-6pm</td>
+            <td> <img src="./image/table_img.png"></td>
+          </tr>
+          <tr class="w3-hover-opacity">
+            <td>Materials sourcing 101</td>
+            <td>November 15, 2024</td>
+            <td>9am-4pm</td>
+            <td> <img src="./image/table_img.png"></td>
+          </tr>
+          <tr class="w3-hover-opacity">
+            <td>2 day bathroom makover</td>
+            <td>September 20, 2024</td>
+            <td>5pm-7pm</td>
+            <td> <img src="./image/table_img.png"></td>
+          </tr>
+          <tr class="w3-hover-opacity">
+            <td>Get Holiday Ready</td>
+            <td>September 21, 2024</td>
+            <td>12pm-4pm</td>
+            <td> <p>closed</p></td>
+          </tr>
+            </th>
+        <tr class="w3-hover-opacity">
+        </tr>
+      </table>
   </div>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img
-        src="/w3images/p5.jpg"
-        style="width: 100%"
-        onclick="onClick(this)"
-        class="w3-hover-opacity"
-        alt="The mist"
-      />
-    </div>
-
-    <div class="w3-col m3">
-      <img
-        src="/w3images/p6.jpg"
-        style="width: 100%"
-        onclick="onClick(this)"
-        class="w3-hover-opacity"
-        alt="My beloved typewriter"
-      />
-    </div>
-
-    <div class="w3-col m3">
-      <img
-        src="/w3images/p7.jpg"
-        style="width: 100%"
-        onclick="onClick(this)"
-        class="w3-hover-opacity"
-        alt="Empty ghost train"
-      />
-    </div>
-
-    <div class="w3-col m3">
-      <img
-        src="/w3images/p8.jpg"
-        style="width: 100%"
-        onclick="onClick(this)"
-        class="w3-hover-opacity"
-        alt="Sailing"
-      />
-    </div>
-    <button
-      class="w3-button w3-padding-large w3-light-grey"
-      style="margin-top: 64px"
-    >
-      LOAD MORE
-    </button>
-  </div>
-</div>
-
-<!-- Modal for full size images on click-->
-<div
-  id="modal01"
-  class="w3-modal w3-black"
-  onclick="this.style.display='none'"
->
-  <span
-    class="w3-button w3-large w3-black w3-display-topright"
-    title="Close Modal Image"
-    ><i class="fa fa-remove"></i
-  ></span>
-  <div
-    class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
-  >
-    <img id="img01" class="w3-image" />
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
+  <br />
+  <br />
+  <br />
 
  <!-- Fourth Parallax Image with Meet us Text -->
  <div class="bgimg-2 w3-display-container w3-opacity-min">
@@ -504,7 +446,7 @@
         style="width: 100%"
         onclick="onClick(this)"
         class="w3-hover-opacity"
-        alt="About Kate"
+        alt="About Kate: Kate is the owner of kld design studio, known for her keen eye for detail and a passion for creating personalized, stylish spaces. With years of experience in the industry, she has built a reputation for blending contemporary elegance with functional design, transforming homes and businesses into stunning environments that reflect her clients' unique tastes."
       />
     </div>
 
@@ -514,7 +456,7 @@
         style="width: 100%"
         onclick="onClick(this)"
         class="w3-hover-opacity"
-        alt="About Lena"
+        alt="About Lena: Lena is a project manager at KLD Studio, an interior design firm, where she excels in overseeing projects from concept to completion. With her strong organizational skills and eye for detail, Lena ensures that every project is delivered on time and meets the firm's high standards of design excellence."
       />
     </div>
 
@@ -524,7 +466,7 @@
         style="width: 100%"
         onclick="onClick(this)"
         class="w3-hover-opacity"
-        alt="About Tori"
+        alt="About Tori: Tori is a materials and textiles expert at KLD Studio, specializing in sourcing and selecting the finest fabrics and materials for interior design projects. Her deep knowledge of textures, patterns, and sustainable options allows her to create sophisticated and tailored solutions that elevate the studio's designs."
       />
     </div>
 
@@ -536,7 +478,7 @@
         style="width: 100%"
         onclick="onClick(this)"
         class="w3-hover-opacity"
-        alt="About Casey"
+        alt="About Casey: Casey is a project financial expert at KLD Studio, where she ensures that all design projects stay within budget while maximizing value. His expertise in cost management and financial planning helps the firm deliver high-quality results without compromising on creativity or client satisfaction."
       />
     </div>
 
@@ -546,7 +488,7 @@
         style="width: 100%"
         onclick="onClick(this)"
         class="w3-hover-opacity"
-        alt="About Nora"
+        alt="About Nora: Nora is a portfolio manager at KLD Studio, where she oversees the firm's diverse range of design projects, ensuring consistency and quality across all client portfolios. Her strategic approach and attention to detail help maintain the firm's high standards, while fostering strong client relationships."
       />
     </div>
 
@@ -556,7 +498,7 @@
         style="width: 100%"
         onclick="onClick(this)"
         class="w3-hover-opacity"
-        alt="About Lola"
+        alt="About Lola: Lola is the studio manager at KLD Studio, where she expertly coordinates daily operations to ensure the smooth running of the firm. Her leadership and organizational skills keep the team on track, enabling the studio to consistently deliver exceptional design projects."
       />
     </div>
   </div>
@@ -768,7 +710,19 @@ function showDivs(n) {
   x[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " w3-opacity-off";
 }
-      // end carousel javascript
+// end added for carousel
+
+      // begin added for sortable
+      $(document).ready(function () {
+        $("table#myTable").tablesorter({
+          sortList: [
+            [2, 1],
+          ] /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
+          CssAsc: "tablesorter-headerAsc",
+          CssDesc: "tablesorter-headerDesc",
+        });
+      });
+      // end added for sortable
     </script>
   </body>
 </html>
