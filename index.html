@@ -74,6 +74,12 @@
           min-height: 400px;
         }
       }
+      /* for scolling area */
+      .my-scrolling {
+        height: 150px;
+        overflow: auto;
+      }
+
     </style>
   </head>
   <body>
@@ -156,7 +162,7 @@
       </div>
     </div>
 
-    <!-- First Parallax Image with Logo Text -->
+  <!-- First Parallax Image with Logo Text -->
     <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
       <div class="w3-display-middle" style="white-space: nowrap">
         <span
@@ -166,7 +172,7 @@
       </div>
     </div>
 
-    <!-- Container (About Section) -->
+  <!-- Container (About Section) -->
     <div class="w3-content w3-container w3-padding-64" id="about">
       <h3 class="w3-center">ABOUT</h3>
       <p class="w3-center"><em>The KLD Design Team</em></p>
@@ -203,9 +209,11 @@
           </p>
         </div>
       </div>
+      <br />
+      <br />
+      <br />
 
-
-    <!-- Second Parallax Image with Portfolio Text -->
+  <!-- Second Parallax Image with Portfolio Text -->
     <div class="bgimg-2 w3-display-container w3-opacity-min">
       <div class="w3-display-middle">
         <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
@@ -217,119 +225,138 @@
       <h3 class="w3-center">PORTFOLIO</h3>
       <p class="w3-center">
       </p>
+      <!-- carousel -->
+       <div class="w3-content">
+        <!--begin slide carousel slide show-->
+        <img
+          class="mySlides"
+          src="./image/carousel2.png"
+          style="width: 100%; display:none"
+          />
+          <img
+          class="mySlides"
+          src="./image/carousel3.png"
+          style="width: 100%; display:none"
+          />
+          <img
+          class="mySlides"
+          src="./image/carousel4.png"
+          style="width: 100%; display:none"
+          />
+          <img
+          class="mySlides"
+          src="./image/carousel5.png"
+          style="width: 100%; display:none"
+          />
+          <img
+          class="mySlides"
+          src="./image/carousel6.png"
+          style="width: 100%; display:none"
+          />
+          <img
+          class="mySlides"
+          src="./image/carousel7.png"
+          style="width: 100%; display:none"
+          />
+          
+        <!-- end carousel slide show -->
+        <!-- begin carousel thumbnail -->
+        <!--add thumbnail buttons for selecting a slide to the slideshow-->
+        <div class="w3-col s2">
+          <img 
+          class="demo w-3-opacity w3-hover-opacity-off"
+          src="./image/carousel7.png"
+          style="width:150px ;height: 150px; cursor:pointer"
+          onclick="currentDiv(0)"
+          />          
+        </div>
+        <div class="w3-col s2">
+          <img 
+          class="demo w-3-opacity w3-hover-opacity-off"
+          src="./image/carousel2.png"
+          style="width:150px ;height: 150px; cursor:pointer"
+          onclick="currentDiv(1)"
+          />          
+        </div>
+        <div class="w3-col s2">
+          <img 
+          class="demo w-3-opacity w3-hover-opacity-off"
+          src="./image/carousel3.png"
+          style="width:150px ;height: 150px; cursor:pointer"
+          onclick="currentDiv(2)"
+          />          
+        </div>
+        <div class="w3-col s2">
+          <img 
+          class="demo w-3-opacity w3-hover-opacity-off"
+          src="./image/carousel4.png"
+          style="width:150px ;height: 150px; cursor:pointer"
+          onclick="currentDiv(3)"
+          />          
+        </div>
+        <div class="w3-col s2">
+          <img 
+          class="demo w-3-opacity w3-hover-opacity-off"
+          src="./image/carousel5.png"
+          style="width:150px ;height: 150px; cursor:pointer"
+          onclick="currentDiv(4)"
+          />          
+        </div>
+        <div class="w3-col s2">
+          <img 
+          class="demo w-3-opacity w3-hover-opacity-off"
+          src="./image/carousel6.png"
+          style="width:152px ;height: 150px; cursor:pointer"
+          onclick="currentDiv(5)"
+          />          
+        </div>
+       </div>
       <br />
 
-      <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-      <div class="w3-row-padding w3-center">
-        <div class="w3-col m3">
-          <img
-            src="/w3images/p1.jpg"
-            style="width: 100%"
-            onclick="onClick(this)"
-            class="w3-hover-opacity"
-            alt="The mist over the mountains"
-          />
+    <!-- Carousel with scollable text area -->
+    <div class="w3-row">
+      <div class="w3-col s12 w3-padding w3-brown">
+        <div
+          class="w3-brown w3-center"
+          style="
+          margin-left: 100px;
+          margin-right: 100px;
+          margin-top: -5px;
+          "
+          >
+          <h4 class="w3-center">our portfolio speaks for itself</h4>
         </div>
-
-        <div class="w3-col m3">
-          <img
-            src="/w3images/p2.jpg"
-            style="width: 100%"
-            onclick="onClick(this)"
-            class="w3-hover-opacity"
-            alt="Coffee beans"
-          />
-        </div>
-
-        <div class="w3-col m3">
-          <img
-            src="/w3images/p3.jpg"
-            style="width: 100%"
-            onclick="onClick(this)"
-            class="w3-hover-opacity"
-            alt="Bear closeup"
-          />
-        </div>
-
-        <div class="w3-col m3">
-          <img
-            src="/w3images/p4.jpg"
-            style="width: 100%"
-            onclick="onClick(this)"
-            class="w3-hover-opacity"
-            alt="Quiet ocean"
-          />
-        </div>
-      </div>
-
-      <div class="w3-row-padding w3-center w3-section">
-        <div class="w3-col m3">
-          <img
-            src="/w3images/p5.jpg"
-            style="width: 100%"
-            onclick="onClick(this)"
-            class="w3-hover-opacity"
-            alt="The mist"
-          />
-        </div>
-
-        <div class="w3-col m3">
-          <img
-            src="/w3images/p6.jpg"
-            style="width: 100%"
-            onclick="onClick(this)"
-            class="w3-hover-opacity"
-            alt="My beloved typewriter"
-          />
-        </div>
-
-        <div class="w3-col m3">
-          <img
-            src="/w3images/p7.jpg"
-            style="width: 100%"
-            onclick="onClick(this)"
-            class="w3-hover-opacity"
-            alt="Empty ghost train"
-          />
-        </div>
-
-        <div class="w3-col m3">
-          <img
-            src="/w3images/p8.jpg"
-            style="width: 100%"
-            onclick="onClick(this)"
-            class="w3-hover-opacity"
-            alt="Sailing"
-          />
-        </div>
-        <button
-          class="w3-button w3-padding-large w3-light-grey"
-          style="margin-top: 64px"
-        >
-          LOAD MORE
-        </button>
       </div>
     </div>
-
-    <!-- Modal for full size images on click-->
-    <div
-      id="modal01"
-      class="w3-modal w3-black"
-      onclick="this.style.display='none'"
-    >
-      <span
-        class="w3-button w3-large w3-black w3-display-topright"
-        title="Close Modal Image"
-        ><i class="fa fa-remove"></i
-      ></span>
-      <div
-        class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
-      >
-        <img id="img01" class="w3-image" />
-        <p id="caption" class="w3-opacity w3-large"></p>
-      </div>
+        <div class="my-scrolling" style="padding-right: 10px">
+          <p>
+            KLD Studio's interior design portfolio stands as a vivid testament to its expertise in transforming
+            spaces into visually stunning and functionally harmonious environments. Each project within the portfolio
+            is a unique reflection of the firm's commitment to blending elegance with innovation. The studio excels
+            in tailoring its designs to suit a diverse range of styles and client preferences, from sleek, modern
+            aesthetics with clean lines and minimalistic flair to rich, traditional settings that exude warmth and
+            grandeur. Their work often features a sophisticated interplay of textures, colors, and materials,
+            meticulously chosen to create a cohesive yet dynamic atmosphere. By incorporating bespoke furniture
+            pieces, custom artwork, and cutting-edge lighting solutions, KLD Studio ensures that every design element
+            serves both a functional purpose and contributes to the overall aesthetic harmony of the space. The result
+            is a collection of interiors that are not only visually impressive but also deeply personalized, reflecting
+            the unique tastes and lifestyles of their clients.
+          </p>
+          <p> Moreover, KLD Studio's portfolio highlights a profound understanding of spatial dynamics and human-centered
+            design principles. The firm’s approach to interior design goes beyond superficial decoration; it involves
+            a thoughtful exploration of how spaces can enhance everyday living and working experiences. Each project
+            is approached with a strategic mindset, considering factors such as natural light, flow of movement, and
+            ergonomic comfort to create environments that are both practical and inspiring. The studio's innovative
+            solutions often include integrating smart home technologies, sustainable materials, and adaptable layouts
+            to meet the evolving needs of modern life. By prioritizing both aesthetic appeal and functional excellence,
+            KLD Studio delivers interiors that are not only visually captivating but also support a harmonious and
+            enriching lifestyle. This holistic approach underscores their reputation as a leading firm in the interior
+            design industry, known for crafting spaces that truly resonate with the people who inhabit them.
+          </p>
+        </div>
     </div>
-
+    </div>
+    <br />
  <!-- Third Parallax Image with Workshops Text -->
  <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
@@ -699,6 +726,49 @@
           x.className = x.className.replace(" w3-show", "");
         }
       }
+      // Carousel javascript
+var myIndex = 0;
+carousel();
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {
+    myIndex = 1;
+  }
+  x[myIndex - 1].style.display = "block";
+  setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+
+// slideshow - carousel
+function currentDiv(n) {
+  showDivs((slideIndex = n));
+  myIndex = n;
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = x.length;
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " w3-opacity-off";
+}
+      // end carousel javascript
     </script>
   </body>
 </html>
